@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Narcissistic Number Checker</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat+Brush|Hind+Madurai|Permanent+Marker">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Narcissistic Number Checker</h1>
+  </header>
+  <section>
+    <article>
+      <h2>What are Narcissistic Numbers?</h2>
+      <p>
+        They are numbers that are equal to the sum of their digits, each raised to the power of the total number of digits they have. They are also known as Armstrong Numbers.<br> For example:
+        <ul>
+          <li>153 (3 digits): 1<sup>3</sup> + 5<sup>3</sup> + 3<sup>3</sup> = 1 + 125 + 27 = 153</li>
+          <li>1634 (4 digits): 1<sup>4</sup> + 6<sup>4</sup> + 3<sup>4</sup> + 4<sup>4</sup> = 1 + 1296 + 81 + 256 = 1634</li>
+        </ul>
+      </p>
+    </article>
+
+    <article>
+      <p>Enter any positive integer below to see if it is narcissistic or not!</p>
+      <form>
+        <label for="getInt">Enter number here:</label>
+        <input type="number" min="0" id="getInt" placeholder="Number"><span class="error"></span>
+        <button class="submit">check!</button>
+      </form>
+      <div class="results">
+        <ul class="resultList">
+        </ul>
+      </div>
+    </article>
+  </section>
+  <footer>
+   <p>Narcissistic Checker</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
